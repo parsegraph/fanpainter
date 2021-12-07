@@ -65,9 +65,14 @@
     "jsdom": "16.4.0",
     "jsdom-global": "3.0.2",
     "mocha": "^8.2.1",
+    "node-canvas-webgl": "^0.2.6",
     "nyc": "^15.1.0",
     "openssl": "^1.1.0",
-    "parsegraph-testsuite": "^1.5.0",
+    "parsegraph-compileprogram": "^2.1.1",
+    "parsegraph-matrix": "^1.4.7",
+    "parsegraph-pagingbuffer": "^1.5.1",
+    "parsegraph-toradians": "^1.4.5",
+    "parsegraph-window": "^1.7.4",
     "prettier": "2.1.2",
     "raw-loader": "^4.0.1",
     "source-map-loader": "^1.0.2",
@@ -80,5 +85,8 @@
     "webgl-mock": "^0.1.7",
     "webpack": "^5.52.0",
     "webpack-cli": "^4.8.0"
+  },
+  "peerDependencies": {
+    "parsegraph-checkglerror": "^1.5.0"
   }
 }
