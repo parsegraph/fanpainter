@@ -1,4 +1,4 @@
-import { compileProgram } from "parsegraph-compileprogram";
+import { compileProgram, GLProvider } from "parsegraph-compileprogram";
 import {
   generateRectangleVertices,
   generateRectangleTexcoords,
@@ -7,7 +7,6 @@ import {
 import PagingBuffer from "parsegraph-pagingbuffer";
 import Color from "parsegraph-color";
 import { toRadians } from "parsegraph-toradians";
-import { BasicWindow } from "parsegraph-window";
 
 // TODO Separate coloring and slicing from drawing the circle... Basically, make this actually just draw the fans we want.
 import fanPainterVertexShader from "./FanPainter_VertexShader.glsl";
@@ -17,7 +16,7 @@ import fanPainterFragmentShader from "./FanPainter_FragmentShader.glsl";
  * Shows a circle that allows some parts to show as selected.
  */
 export default class FanPainter {
-  _window: BasicWindow;
+  _window: GLProvider;
   _ascendingRadius: number;
   _descendingRadius: number;
   _selectionAngle: number;
@@ -31,7 +30,7 @@ export default class FanPainter {
   aSelectionSize: number;
   uWorld: WebGLUniformLocation;
 
-  constructor(window: BasicWindow) {
+  constructor(window: GLProvider) {
     this._window = window;
     if (!this._window) {
       throw new Error("Window or other GLProvider must be given");
