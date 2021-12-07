@@ -1,6 +1,6 @@
 {
   "name": "parsegraph-fanpainter",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "node",
   "main": "dist/parsegraph-fanpainter.js",
   "types": "dist/parsegraph-fanpainter.d.ts",
