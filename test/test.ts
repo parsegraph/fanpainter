@@ -1,4 +1,4 @@
-import FanPainter from "../dist/parsegraph-fanpainter";
+import FanPainter from "../src/index";
 import Color from "parsegraph-color";
 
 import { mockDOM } from "node-canvas-webgl";
