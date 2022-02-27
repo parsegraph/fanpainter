@@ -15,6 +15,16 @@
   },
   "homepage": "https://github.com/parsegraph/fanpainter#readme",
   "dependencies": {
+    "parsegraph-compileprogram": "^2.2.3",
+    "parsegraph-matrix": "^1.4.10",
+    "parsegraph-pagingbuffer": "^2.1.1",
+    "parsegraph-toradians": "^1.4.6",
+    "parsegraph-color": "^1.4.6"
+  },
+  "peerDependencies": {
+    "parsegraph-checkglerror": "^1.5.2"
+  },
+  "devDependencies": {
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
@@ -34,10 +44,11 @@
     "jsdom": "16.4.0",
     "jsdom-global": "3.0.2",
     "node-canvas-webgl": "^0.2.6",
-    "parsegraph-compileprogram": "^2.2.3",
-    "parsegraph-matrix": "^1.4.10",
-    "parsegraph-pagingbuffer": "^2.1.1",
-    "parsegraph-toradians": "^1.4.6",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.21",
+    "babel-jest": "^27.5.1",
+    "jest": "^27.5.1",
+    "typedoc": "^0.22.12",
     "prettier": "2.1.2",
     "raw-loader": "^4.0.1",
     "source-map-loader": "^1.0.2",
@@ -49,16 +60,5 @@
     "webgl-mock": "^0.1.7",
     "webpack": "^5.52.0",
     "webpack-cli": "^4.8.0"
-  },
-  "peerDependencies": {
-    "parsegraph-checkglerror": "^1.5.2"
-  },
-  "devDependencies": {
-    "@types/jest": "^27.4.1",
-    "@types/node": "^17.0.21",
-    "babel-jest": "^27.5.1",
-    "jest": "^27.5.1",
-    "parsegraph-color": "^1.4.6",
-    "typedoc": "^0.22.12"
   }
 }
