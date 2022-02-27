@@ -1,7 +1,7 @@
-import {BasicGLProvider} from 'parsegraph-compileprogram';
+import { BasicGLProvider } from "parsegraph-compileprogram";
 import { make2DProjection } from "parsegraph-matrix";
 import FanPainter from ".";
-import Color from 'parsegraph-color';
+import Color from "parsegraph-color";
 
 document.addEventListener("DOMContentLoaded", () => {
   const root = document.getElementById("demo");

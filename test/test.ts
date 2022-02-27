@@ -2,7 +2,7 @@ import FanPainter from "../src/index";
 import Color from "parsegraph-color";
 
 import { mockDOM } from "node-canvas-webgl";
-import {BasicGLProvider} from "parsegraph-compileprogram";
+import { BasicGLProvider } from "parsegraph-compileprogram";
 mockDOM(window);
 
 describe("Package", function () {
