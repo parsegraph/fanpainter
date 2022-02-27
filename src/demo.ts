@@ -1,11 +1,15 @@
-import todo from ".";
+import {BasicGLProvider} from 'parsegraph-compileprogram';
+import { make2DProjection } from "parsegraph-matrix";
+import FanPainter from ".";
+import Color from 'parsegraph-color';
 
 document.addEventListener("DOMContentLoaded", () => {
   const root = document.getElementById("demo");
   root.style.position = "relative";
+  const glProvider = new BasicGLProvider();
 
   const container = document.createElement("div");
-  container.innerHTML = `${todo()}`;
+  container.appendChild(glProvider.container());
   container.style.position = "absolute";
   container.style.left = "0px";
   container.style.top = "0px";
@@ -14,6 +18,21 @@ document.addEventListener("DOMContentLoaded", () => {
   container.style.fontSize = "18px";
   container.style.fontFamily = "sans";
   const refresh = () => {
+    const painter = new FanPainter(glProvider);
+    const animate = () => {
+      const mat = make2DProjection(glProvider.width(), glProvider.height());
+      painter.selectDeg(
+        Math.random() * glProvider.width(),
+        Math.random() * glProvider.height(),
+        Math.random() * 360,
+        Math.random() * 360,
+        Color.random()
+      );
+      glProvider.render();
+      painter.render(mat);
+      requestAnimationFrame(animate);
+    };
+    requestAnimationFrame(animate);
     const rand = () => Math.floor(Math.random() * 255);
     document.body.style.backgroundColor = `rgb(${rand()}, ${rand()}, ${rand()})`;
     container.style.color = `rgb(${rand()}, ${rand()}, ${rand()})`;
