@@ -19,7 +19,7 @@
     "parsegraph-compileprogram": "^2.2.3",
     "parsegraph-matrix": "^1.4.10",
     "parsegraph-pagingbuffer": "^2.1.1",
-    "parsegraph-toradians": "^1.4.6"
+    "parsegraph-toradians": "^1.4.7"
   },
   "peerDependencies": {
     "parsegraph-checkglerror": "^1.5.2"
