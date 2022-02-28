@@ -1,6 +1,6 @@
 {
   "name": "parsegraph-fanpainter",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "description": "fanpainter",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
