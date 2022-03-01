@@ -22,7 +22,8 @@
     "parsegraph-toradians": "^1.4.9"
   },
   "peerDependencies": {
-    "parsegraph-checkglerror": "^1.5.3"
+    "parsegraph-checkglerror": "^1.5.3",
+    "webgl-debug": "^2.0.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.10",
