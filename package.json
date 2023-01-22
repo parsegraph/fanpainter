@@ -15,11 +15,11 @@
   },
   "homepage": "https://github.com/parsegraph/fanpainter#readme",
   "dependencies": {
-    "parsegraph-color": "^1.4.11",
-    "parsegraph-compileprogram": "^2.2.18",
-    "parsegraph-matrix": "^1.4.14",
+    "parsegraph-color": "^1.4.12",
+    "parsegraph-compileprogram": "^2.2.20",
+    "parsegraph-matrix": "^1.4.15",
     "parsegraph-pagingbuffer": "^2.1.5",
-    "parsegraph-toradians": "^1.4.10"
+    "parsegraph-toradians": "^1.4.11"
   },
   "peerDependencies": {
     "parsegraph-checkglerror": "^1.5.7"
