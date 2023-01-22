@@ -15,6 +15,7 @@
   },
   "homepage": "https://github.com/parsegraph/fanpainter#readme",
   "dependencies": {
+    "parsegraph-color": "^1.4.11",
     "parsegraph-compileprogram": "^2.2.18",
     "parsegraph-matrix": "^1.4.13",
     "parsegraph-pagingbuffer": "^2.1.5",
