@@ -18,8 +18,8 @@
     "parsegraph-color": "^1.4.12",
     "parsegraph-compileprogram": "^2.2.20",
     "parsegraph-matrix": "^1.4.15",
-    "parsegraph-pagingbuffer": "^2.1.5",
-    "parsegraph-toradians": "^1.4.11"
+    "parsegraph-pagingbuffer": "^2.1.7",
+    "parsegraph-toradians": "^1.4.12"
   },
   "peerDependencies": {
     "parsegraph-checkglerror": "^1.5.7"
